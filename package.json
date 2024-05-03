@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node --experimental-permission --allow-worker --allow-child-process --allow-fs-read=$(realpath ./public/read/) --allow-fs-read=$(realpath ./node_modules/) --allow-fs-write=$(realpath ./public/write) --watch $(realpath ./public/read/router.js)"
+    "watch": "node --experimental-permission --allow-worker --allow-child-process --allow-fs-read=$(realpath ./public/read/) --allow-fs-read=$(realpath ./public/readwrite/) --allow-fs-read=$(realpath ./node_modules/) --allow-fs-write=$(realpath ./public/write) --allow-fs-write=$(realpath ./public/readwrite) --watch $(realpath ./public/read/router.js)"
   },
   "keywords": [],
   "author": "",
